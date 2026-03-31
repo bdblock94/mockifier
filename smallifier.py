@@ -10,7 +10,6 @@ smalls = ["ᵃ","ᵇ","ᶜ","ᵈ","ᵉ","ᶠ","ᵍ","ʰ","ᶦ","ʲ","ᵏ","ˡ","
 smallified = ""
 
 
-
 for letter in range(0, len(to_smallify)):
     if to_smallify[letter].isalnum():
         if to_smallify[letter] in smalls:
