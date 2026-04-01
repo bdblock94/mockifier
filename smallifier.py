@@ -20,21 +20,21 @@ def random_case():
 
 
 def random_size():
-    smallified = ""
+    randomized = ""
     for letter in range(0, len(text)):
         if random.randint(0, 10) % 2 == 0:
             if text[letter].isalnum():
                 if text[letter] in smalls:
-                    smallified += text[letter]
+                    randomized += text[letter]
                 else:
                     smalls_index = bigs.index(text[letter])
-                    smallified += smalls[smalls_index]
+                    randomized += smalls[smalls_index]
             else:
-                smallified += text[letter]
+                randomized += text[letter]
         else:
-            smallified += text[letter]
-    print(smallified)
-    pyperclip.copy(smallified)
+            randomized += text[letter]
+    print(randomized)
+    pyperclip.copy(randomized)
 
 
 
@@ -63,6 +63,8 @@ def main():
         sys.exit(0)
     elif sys.argv[1] == "-c":
         random_case()
+    else:
+        sys.exit("Warning: Invalid argument, did you mean to use -r or -c?")
     
 
 
