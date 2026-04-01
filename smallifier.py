@@ -13,7 +13,13 @@ smalls = ["ᵃ","ᵇ","ᶜ","ᵈ","ᵉ","ᶠ","ᵍ","ʰ","ᶦ","ʲ","ᵏ","ˡ","
 
 
 
+
 def random_case():
+    print("Try again when -c is updated")
+
+
+
+def random_size():
     smallified = ""
     for letter in range(0, len(text)):
         if random.randint(0, 10) % 2 == 0:
@@ -51,9 +57,12 @@ def smallify():
 def main():
     if len(sys.argv) != 2:
         smallify()
-    else:
-        if sys.argv[1] == "-r":
-            random_case()
+        sys.exit(0)
+    elif sys.argv[1] == "-r":
+        random_size()
+        sys.exit(0)
+    elif sys.argv[1] == "-c":
+        random_case()
     
 
 
