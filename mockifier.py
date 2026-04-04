@@ -34,12 +34,14 @@ def random_size(ltr):
 
 def output_one():
     for ltr in text:
+        output = ""
         output += make_small(ltr)
     pyperclip.copy(output)
     print(output)
 
 
 def output_two():
+    output = ""
     for ltr in text:
         if sys.argv[1] == "-r":
             output += random_size(ltr)
