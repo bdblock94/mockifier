@@ -86,6 +86,8 @@ for ltr in smallify.lower():
                now_small += '!'
     elif ltr == "?":
                now_small += '?'
+    elif ltr == ".":
+               now_small += '.'
     else:
         continue
 
