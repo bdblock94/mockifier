@@ -32,8 +32,8 @@ def random_size(ltr):
 
 
 def output_one():
+    output = ""
     for ltr in text:
-        output = ""
         output += make_small(ltr)
     pyperclip.copy(output)
     print(output)
