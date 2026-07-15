@@ -13,22 +13,19 @@ def make_small(ltr):
     ltr = ltr.lower()
     if ltr.isalnum() and ltr not in smalls:
         return smalls[bigs.index(ltr)]
-    else:
-        return ltr
+    return ltr
 
 
 def random_case(ltr):
     if random.randint(1,2) == 2:
         return ltr.upper()
-    else:
-        return ltr.lower()
+    return ltr.lower()
 
 
 def random_size(ltr):
     if random.randint(1,2) == 2:
         return make_small(ltr)
-    else:
-        return ltr
+    return ltr
 
 
 def output_one():
